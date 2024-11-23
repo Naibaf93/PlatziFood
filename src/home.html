@@ -16,7 +16,7 @@
         <button></button>
     </header>
 
-    <main class="bg-gray-100 mb-8">
+    <main class="bg-gray-900 mb-8">
         <div id="imgBack" class="flex h-56 md:h-80 w-screen items-center justify-center bg-cover bg-no-repeat bg-center 
         text-3xl" style="background-image: url(assets/img/restaurante.jpg);">
            <!-- Overlay oscuro -->
@@ -33,32 +33,24 @@
         
         <div class="container mx-auto md:flex">
             <div class="mb-16 mt-10 flex w-screen flex-col flex-wrap items-center text-gray-100 sm:mb-[4.5rem] sm:flex-row
-            sm:justify-center md:bg-white rounded-lg">
-                <div>
-                    <img src="assets/img/hamburguer.jpg" alt="Imagen Hamburguesa" class="w-full md:w-48 md:h-full object-cover
-                    rounded-lg md:rounded-r-none">
+            sm:justify-center">
+
+            <article class="mt-8 flex flex-col items-center justify-center sm:flex-row lg:ml-4 xl:ml-0 xl:w-[45.5%]">
+                <img src="assets/img/hamburguer.jpg" alt="Imagen hamburguesa" class="max-h-[18rem] w-[24rem] overflow-hidden
+                rounded-lg object-cover sm:max-h-[18rem] sm:rounded-r-none">
+                <div id="card" class="relative bottom-3 max-w-[19.5rem] rounded-lg bg-gray-100 px-4 py-2 text-gray-900
+                shadow-2xl sm:bottom-0 sm:flex sm:h-[18rem] sm:w-[15rem] sm:flex-col sm:justify-between sm:rounded-bl-none
+                sm:rounded-tl-none">
+                    <div id="description" class="sm:mt-4">
+                        <h2 class="text-xl font-bold">Hamburguesa Doble Carne</h2>
+                        <p class="leading-snug text-gray-700 sm:mt-4">Hamburguesa doble carne artesanal al carbon con queso cheedar, tocineta y aderezo</p>
+                        <p class="font-medium sm:mt-4">$17.000 COP</p>
+                    </div>
+                    <div id="star" class="flex items-center text-center sm:mb-2">
+                        <div class="mt-2 text-sm text-yellow-500">&starf;&starf;&starf;&starf;&starf; / 54 Reseñas</div>    
+                    </div>
                 </div>
-                <div class="relative mx-2 p-2 shadow-lg md:shadow-none bg-white md:bg-transparent rounded-lg -mt-2">
-                    <h2 class="text-xl tracking-tight font-bold uppercase text-gray-900 md:text-lg">Hamburguesa Doble Carne🐮</h2>
-                    <p class="text-gray-700 leading-snug">Hamburguesa doble carne artesanal al carbon con queso cheedar, tocineta y aderezo</p>
-                    <div class="mt-2 text-sm font-semibold text-gray-700">Pidela sola por $17.000 COP</div>
-                    <div class="mt-2 text-sm font-semibold text-gray-700">Pidela en combo por $22.000 COP</div>
-                    <div class="mt-2 text-sm text-yellow-500">&starf;&starf;&starf;&starf;&starf; / 105 Reseñas</div>    
-                </div>
-            </div>
-            
-            <div class="mx-2 md:mx-0 md:ml-2 mt-4 md:w-1/2 md:flex md:bg-white rounded-lg">
-                <div>
-                    <img src="assets/img/hamburguer.jpg" alt="Imagen Hamburguesa" class="w-full md:w-48 md:h-full object-cover
-                    rounded-lg md:rounded-r-none">
-                </div>
-                <div class="relative mx-2 p-2 shadow-lg md:shadow-none bg-white md:bg-transparent rounded-lg -mt-2">
-                    <h2 class="text-xl tracking-tight font-bold uppercase text-gray-900 md:text-lg">Hamburguesa Doble Carne🐮</h2>
-                    <p class="text-gray-700 leading-snug">Hamburguesa doble carne artesanal al carbon con queso cheedar, tocineta y aderezo</p>
-                    <div class="mt-2 text-sm font-semibold text-gray-700">Pidela sola por $17.000 COP</div>
-                    <div class="mt-2 text-sm font-semibold text-gray-700">Pidela en combo por $22.000 COP</div>
-                    <div class="mt-2 text-sm text-yellow-500">&starf;&starf;&starf;&starf;&starf; / 105 Reseñas</div>    
-                </div>
+            </article>             
             </div>
         </div>
     </main>
