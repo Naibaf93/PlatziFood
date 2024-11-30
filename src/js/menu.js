@@ -1,5 +1,11 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuAside = document.getElementById("menu-aside");
+    const menuIcons = menuToggle.querySelectorAll("i");
 
-    let button = document.querySelector(".menu-toggle");
-    let aside = document.querySelector(".menu-aside");
-})
+    menuToggle.addEventListener("click", () => {
+        menuAside.classList.toggle("hidden");
+        menuAside.classList.add("flex")
+        menuIcons.forEach(icon => icon.classList.toggle("hidden"));
+    });
+});
