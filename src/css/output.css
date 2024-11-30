@@ -600,14 +600,6 @@ video {
   border-width: 0;
 }
 
-.\!visible {
-  visibility: visible !important;
-}
-
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -620,6 +612,10 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-3 {
   bottom: 0.75rem;
 }
@@ -630,14 +626,6 @@ video {
 
 .top-12 {
   top: 3rem;
-}
-
-.top-56 {
-  top: 14rem;
-}
-
-.top-72 {
-  top: 18rem;
 }
 
 .z-10 {
@@ -689,10 +677,6 @@ video {
 
 .ml-8 {
   margin-left: 2rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
 }
 
 .mr-3 {
@@ -751,10 +735,6 @@ video {
   height: 2rem;
 }
 
-.h-\[14rem\] {
-  height: 14rem;
-}
-
 .h-auto {
   height: auto;
 }
@@ -769,14 +749,6 @@ video {
 
 .w-\[24rem\] {
   width: 24rem;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[6\.2rem\] {
-  width: 6.2rem;
 }
 
 .w-\[80vw\] {
@@ -859,12 +831,12 @@ video {
   gap: 5rem;
 }
 
-.gap-56 {
-  gap: 14rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-56 {
+  gap: 14rem;
 }
 
 .overflow-hidden {
@@ -889,6 +861,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -977,10 +954,6 @@ video {
 
 .pr-14 {
   padding-right: 3.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-center {
@@ -1089,12 +1062,16 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
-.text-opacity-60 {
-  --tw-text-opacity: 0.6;
+.text-opacity-90 {
+  --tw-text-opacity: 0.9;
 }
 
 .underline {
   text-decoration-line: underline;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-2xl {
@@ -1163,10 +1140,6 @@ video {
     margin-bottom: 4.5rem;
   }
 
-  .sm\:ml-0 {
-    margin-left: 0px;
-  }
-
   .sm\:ml-8 {
     margin-left: 2rem;
   }
@@ -1177,10 +1150,6 @@ video {
 
   .sm\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .sm\:flex {
@@ -1265,10 +1234,6 @@ video {
 
   .md\:justify-end {
     justify-content: flex-end;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
   }
 
   .md\:gap-96 {

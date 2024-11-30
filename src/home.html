@@ -24,7 +24,7 @@
     </header>
     
     <!-- Aside -->
-    <aside id="menu-aside" class="absolute top-12 z-10 hidden w-full bg-primary md:h-[11rem] justify-between">
+    <aside id="menu-aside" class="fixed top-12 z-10 hidden w-full bg-primary md:h-[11rem] justify-between">
         <div class="mb-5 ml-4 mt-2 flex items-center">
             <h2 class="text-pretty w-full text-base font-bold sm:text-lg md:text-xl lg:text-2xl">
                 El plato del día es nuestra deliciosa Cazuela de mariscos
@@ -40,14 +40,17 @@
     
 
     <main class="bg-gray-900 pb-8">
-        <div id="imgBack" class="flex h-56 md:h-80 w-screen items-center justify-center bg-cover bg-no-repeat bg-center 
-        text-3xl" style="background-image: url(assets/img/restaurante.jpg);">
-        </div>
-        <div class="flex w-screen items-center justify-center">
-            <img src="assets/img/logo-w.svg" alt="platzi food logo" class="absolute top-56 h-12 text-center xs:ml-2 sm:ml-0
-            sm:h-24">
-            <h1 class="absolute top-72 flex w-[80vw] flex-col items-center text-pretty text-center text-2xl text-primary
-             sm:w-[25rem] sm:mt-6 capitalize text-opacity-60">The best restaurant in Latam winner of 5 Michelin Stars</h1>
+        <!-- Contenedor con la imagen de fondo -->
+        <div id="imgBack" class="relative flex h-56 md:h-80 w-screen items-center justify-center bg-cover bg-no-repeat bg-center text-3xl" style="background-image: url(assets/img/restaurante.jpg);">
+            <!-- Overlay oscuro -->
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <!-- Contenido centrado sobre la imagen -->
+            <div class="relative flex flex-col items-center text-center text-white">
+                <img src="assets/img/logo-w.svg" alt="platzi food logo" class="h-12 sm:h-24">
+                <h1 class="mt-4 w-[80vw] text-2xl sm:w-[25rem] capitalize text-opacity-90">
+                    The best restaurant in Latam winner of 5 Michelin Stars
+                </h1>
+            </div>
         </div>
         
         <div class="container mx-auto md:flex">
